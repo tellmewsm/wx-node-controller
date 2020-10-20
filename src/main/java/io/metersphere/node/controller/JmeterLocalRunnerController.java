@@ -16,12 +16,14 @@ public class JmeterLocalRunnerController {
 
 
     @PostMapping("/start")
-    public void startContainer(@RequestBody TestRequest testRequest) throws IOException {
+    public String startContainer(@RequestBody TestRequest testRequest) throws IOException {
         localRunnerService.startTest(testRequest);
+        return "OK";
     }
 
     @GetMapping("/stop/{testId}")
-    public void stopContainer(@PathVariable String testId) {
+    public String stopContainer(@PathVariable String testId) {
         localRunnerService.stopTest(testId);
+        return "OK";
     }
 }
