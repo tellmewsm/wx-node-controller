@@ -1,4 +1,4 @@
-package io.metersphere.config;
+package io.metersphere.node.config;
 
 
 import lombok.Getter;

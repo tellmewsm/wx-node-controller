@@ -1,6 +1,6 @@
-package io.metersphere;
+package io.metersphere.node;
 
-import io.metersphere.config.JmeterProperties;
+import io.metersphere.node.config.JmeterProperties;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;

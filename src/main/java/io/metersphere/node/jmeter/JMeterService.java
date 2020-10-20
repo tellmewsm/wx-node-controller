@@ -1,7 +1,7 @@
-package io.metersphere.jmeter;
+package io.metersphere.node.jmeter;
 
-import io.metersphere.config.JmeterProperties;
-import io.metersphere.util.LogUtil;
+import io.metersphere.node.config.JmeterProperties;
+import io.metersphere.node.util.LogUtil;
 import org.apache.jmeter.save.SaveService;
 import org.apache.jmeter.util.JMeterUtils;
 import org.apache.jorphan.collections.HashTree;

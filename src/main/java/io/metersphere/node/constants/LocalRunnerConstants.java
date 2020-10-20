@@ -1,4 +1,4 @@
-package io.metersphere.constants;
+package io.metersphere.node.constants;
 
 import org.apache.commons.lang.StringUtils;
 

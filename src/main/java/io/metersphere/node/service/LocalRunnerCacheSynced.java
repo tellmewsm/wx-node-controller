@@ -1,7 +1,8 @@
-package io.metersphere.service;
+package io.metersphere.node.service;
 
-import io.metersphere.jmeter.LocalRunner;
-import io.metersphere.util.LogUtil;
+import io.metersphere.node.constants.LocalRunnerConstants;
+import io.metersphere.node.jmeter.LocalRunner;
+import io.metersphere.node.util.LogUtil;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.stereotype.Service;
 
@@ -12,8 +13,6 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-
-import static io.metersphere.constants.LocalRunnerConstants.LOCAL_FILE_PATH;
 
 @Service
 public class LocalRunnerCacheSynced {
@@ -29,7 +28,7 @@ public class LocalRunnerCacheSynced {
                     for (String testId : cached.keySet()) {
                         if (!cached.get(testId).isActive()) {
                             cached.remove(testId);
-                            String filePath = StringUtils.join(new String[]{LOCAL_FILE_PATH, testId}, File.separator);
+                            String filePath = StringUtils.join(new String[]{LocalRunnerConstants.LOCAL_FILE_PATH, testId}, File.separator);
                             // todo 删除文件
 //                            FileUtils.forceDelete(new File(filePath));
                             LogUtil.info("test is done, remove dir: " + filePath);

@@ -1,8 +1,8 @@
-package io.metersphere.controller;
+package io.metersphere.node.controller;
 
 
-import io.metersphere.controller.request.TestRequest;
-import io.metersphere.service.LocalRunnerService;
+import io.metersphere.node.controller.request.TestRequest;
+import io.metersphere.node.service.LocalRunnerService;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
