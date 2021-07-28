@@ -7,8 +7,8 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.*;
 
 public class FileUtils {
-    public static final String BODY_FILE_DIR = "/opt/metersphere/data/body";
-    public static final String JAR_FILE_DIR = "/opt/metersphere/data/node/jar";
+    public static final String BODY_FILE_DIR = "/Users/wuxi/Opt/metersphere/data/body";
+    public static final String JAR_FILE_DIR = "/Users/wuxi/Opt/metersphere/data/node/jar";
 
     public static void createFiles(MultipartFile[] bodyFiles, String path) {
         if (bodyFiles != null && bodyFiles.length > 0) {
